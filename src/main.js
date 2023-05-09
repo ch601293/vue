@@ -5,6 +5,7 @@ import ElementPlus from "element-plus";
 import login from "./components/login.vue";
 import index from "./views/index.vue";
 import { createRouter, createWebHistory } from "vue-router";
+
 const routes = [
   {
     path: "/",
@@ -18,7 +19,8 @@ const router = createRouter({
   routes,
 });
 const app = createApp(App);
-app.mount("#app");
+
 app.use(ElementPlus);
 app.use(router);
-app.component("login", login);
+
+app.mount("#app");

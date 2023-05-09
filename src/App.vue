@@ -1,6 +1,5 @@
 <template>
   <div id="continer">
-    <login> </login>
+    <RouterView></RouterView>
   </div>
 </template>
-
